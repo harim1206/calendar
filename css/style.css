@@ -15,7 +15,6 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  position: relative;
 }
 
 #calendar-table{
@@ -36,4 +35,24 @@ body{
 
 #sunday-cell{
   color: red;
+}
+
+
+@media (max-width: 400px) {
+  #calendar-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #calendar-table{
+    width: 100%;
+  }
+
+  .arrow-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 20px 0 20px;
+  }
 }

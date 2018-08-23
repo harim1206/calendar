@@ -21,6 +21,7 @@ currCal.createCalendar()
 previousMonthButton.addEventListener('click', loadPreviousMonth)
 nextMonthButton.addEventListener('click', loadNextMonth)
 
+// Render previous month
 function loadPreviousMonth(){
   removeCalendar()
 
@@ -35,9 +36,9 @@ function loadPreviousMonth(){
 
   currCal = new Calendar(currentCalendarDate)
   currCal.createCalendar()
-
 }
 
+// Render next month
 function loadNextMonth(){
   removeCalendar()
 
@@ -52,7 +53,6 @@ function loadNextMonth(){
 
   currCal = new Calendar(currentCalendarDate)
   currCal.createCalendar()
-
 }
 
 // Remove current calendar table before rendering new calendar
